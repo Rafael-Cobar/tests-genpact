@@ -28,24 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnCarpetaEntrada = new System.Windows.Forms.Button();
+            this.txtCarpetaEntrada = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCarpetaSalida = new System.Windows.Forms.TextBox();
+            this.btnCarpetaSalida = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnEmpezar = new System.Windows.Forms.Button();
+            this.btnDetener = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // btnCarpetaEntrada
+            // 
+            this.btnCarpetaEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarpetaEntrada.Location = new System.Drawing.Point(347, 30);
+            this.btnCarpetaEntrada.Name = "btnCarpetaEntrada";
+            this.btnCarpetaEntrada.Size = new System.Drawing.Size(107, 39);
+            this.btnCarpetaEntrada.TabIndex = 0;
+            this.btnCarpetaEntrada.Text = "Abrir";
+            this.btnCarpetaEntrada.UseVisualStyleBackColor = true;
+            this.btnCarpetaEntrada.Click += new System.EventHandler(this.btnCarpetaEntrada_Click);
+            // 
+            // txtCarpetaEntrada
+            // 
+            this.txtCarpetaEntrada.Location = new System.Drawing.Point(16, 49);
+            this.txtCarpetaEntrada.Name = "txtCarpetaEntrada";
+            this.txtCarpetaEntrada.ReadOnly = true;
+            this.txtCarpetaEntrada.Size = new System.Drawing.Size(309, 20);
+            this.txtCarpetaEntrada.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Seleccionar que carpeta desea visualizar:";
+            // 
+            // txtCarpetaSalida
+            // 
+            this.txtCarpetaSalida.Location = new System.Drawing.Point(16, 132);
+            this.txtCarpetaSalida.Name = "txtCarpetaSalida";
+            this.txtCarpetaSalida.ReadOnly = true;
+            this.txtCarpetaSalida.Size = new System.Drawing.Size(309, 20);
+            this.txtCarpetaSalida.TabIndex = 3;
+            // 
+            // btnCarpetaSalida
+            // 
+            this.btnCarpetaSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarpetaSalida.Location = new System.Drawing.Point(347, 113);
+            this.btnCarpetaSalida.Name = "btnCarpetaSalida";
+            this.btnCarpetaSalida.Size = new System.Drawing.Size(107, 39);
+            this.btnCarpetaSalida.TabIndex = 4;
+            this.btnCarpetaSalida.Text = "Abrir";
+            this.btnCarpetaSalida.UseVisualStyleBackColor = true;
+            this.btnCarpetaSalida.Click += new System.EventHandler(this.btnCarpetaSalida_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(158, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Seleccione la carpeta de salida:";
+            // 
+            // btnEmpezar
+            // 
+            this.btnEmpezar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpezar.Location = new System.Drawing.Point(16, 186);
+            this.btnEmpezar.Name = "btnEmpezar";
+            this.btnEmpezar.Size = new System.Drawing.Size(201, 39);
+            this.btnEmpezar.TabIndex = 6;
+            this.btnEmpezar.Text = "Empezar";
+            this.btnEmpezar.UseVisualStyleBackColor = true;
+            this.btnEmpezar.Click += new System.EventHandler(this.btnEmpezar_Click);
+            // 
+            // btnDetener
+            // 
+            this.btnDetener.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetener.Location = new System.Drawing.Point(271, 186);
+            this.btnDetener.Name = "btnDetener";
+            this.btnDetener.Size = new System.Drawing.Size(201, 39);
+            this.btnDetener.TabIndex = 10;
+            this.btnDetener.Text = "Detener";
+            this.btnDetener.UseVisualStyleBackColor = true;
+            this.btnDetener.Click += new System.EventHandler(this.btnDetener_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Blue;
+            this.richTextBox1.Location = new System.Drawing.Point(16, 256);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(456, 222);
+            this.richTextBox1.TabIndex = 7;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.WordWrap = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 240);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Mensajes:";
             // 
             // ObservadorCarpetas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.ClientSize = new System.Drawing.Size(484, 511);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnDetener);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.btnEmpezar);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnCarpetaSalida);
+            this.Controls.Add(this.txtCarpetaSalida);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCarpetaEntrada);
+            this.Controls.Add(this.btnCarpetaEntrada);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(500, 500);
-            this.MinimumSize = new System.Drawing.Size(500, 500);
+            this.MaximumSize = new System.Drawing.Size(500, 550);
+            this.MinimumSize = new System.Drawing.Size(500, 550);
             this.Name = "ObservadorCarpetas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ObservadorCarpetas";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCarpetaEntrada;
+        private System.Windows.Forms.TextBox txtCarpetaEntrada;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCarpetaSalida;
+        private System.Windows.Forms.Button btnCarpetaSalida;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnEmpezar;
+        private System.Windows.Forms.Button btnDetener;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label5;
     }
 }
 
