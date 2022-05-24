@@ -1,6 +1,4 @@
-# Observador de Carpetas
-
----
+# **Observador de Carpetas**
 
 ## Descripción
 
